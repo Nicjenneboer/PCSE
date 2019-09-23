@@ -7,10 +7,10 @@ extern "C" void uart_put_char( char c ){
 }
 
 extern "C" void convert_char( char c ){
-	if(c>64 && c<91){
-		uart_put_char( c+32 );
-	}else if(c>96 && c<123){
-		uart_put_char( c-32 );
+	if(c>'A' && c<'Z'){
+		uart_put_char(c+('a'-'A'));
+	}else if(c>'a' && c<'z'){
+		uart_put_char(c-('a'-'A'));
 	}else{
 		uart_put_char( c );
 	}

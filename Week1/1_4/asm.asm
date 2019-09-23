@@ -5,6 +5,8 @@
 .global application
 .global convert_char
 
+
+
 print_asciz:
 	MOV R4, R0
 loop:
@@ -22,20 +24,22 @@ application:
 	B print_asciz
 
 convert_char:
-	CMP R0, #122
+	MOV R1, #'a'
+	SUB R1, #'A'
+	CMP R0, #'z'
 	BGT print
-	CMP R0, #65
+	CMP R0, #'A'
 	BLT print
-	CMP R0, #90
+	CMP R0, #'Z'
 	BLE upper
-	CMP r0, #97
+	CMP r0, #'a'
 	BGE lower
 	B print
 upper:
-	ADD R0, #32
+	ADD R0, R1
 	B print
 lower:
-	SUB R0, #32
+	SUB R0, R1
 	B print
 print:
 	B uart_put_char
