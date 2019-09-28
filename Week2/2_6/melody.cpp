@@ -1,0 +1,48 @@
+#include "melody.hpp"
+
+void melody::play( note_player & p ){
+	p.play( note{ 987, 150000 } );
+	p.play( note{ 1760, 150000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 150000 } );
+	p.play( note{ 1568, 150000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 150000 } );
+	p.play( note{ 1174, 150000 } );
+	p.play( note{ 1318, 300000 } );
+	p.play( note{ 1318, 600000 } );
+	p.play( note{ 1046, 1200000 } );
+	p.play( note{ 987, 150000 } );
+	p.play( note{ 1760, 150000 } );
+	p.play( note{ 1568, 600000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 150000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 150000 } );
+	p.play( note{ 1174, 150000 } );
+	p.play( note{ 1318, 300000 } );
+	p.play( note{ 1318, 600000 } );
+	p.play( note{ 1046, 1200000 } );
+	p.play( note{ 987, 150000 } );
+	p.play( note{ 1760, 150000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 300000 } );
+	p.play( note{ 1568, 150000 } );
+	p.play( note{ 1568, 150000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 300000 } );
+	p.play( note{ 1174, 150000 } );
+	p.play( note{ 1174, 150000 } );
+	p.play( note{ 1318, 300000 } );
+	p.play( note{ 1318, 600000 } );
+	p.play( note{ 1046, 600000 } );
+}
