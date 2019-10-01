@@ -90,7 +90,6 @@ std::array< char, 2 > int_to_char_array(const int & number){
 
 class timer{
 public:
-
 	long unsigned int time;
 	int sec = 0;
 	int min = 0;
@@ -203,7 +202,6 @@ public:
 	{}
 
 	void draw() override{
-		time.update_time();
 
 		auto font = hwlib::font_default_8x8();
 
