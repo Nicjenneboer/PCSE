@@ -25,5 +25,5 @@ note_player_print.o: note_player_print.cpp note_player_print.hpp note_player.hpp
 	g++ -std=c++17 -c note_player_print.cpp -o note_player_print.o
 
 
-RELATIVE := $(RELATIVE)../
+RELATIVE := $(RELATIVE)../../
 include $(RELATIVE)Makefile.due
